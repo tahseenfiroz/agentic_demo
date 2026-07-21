@@ -78,3 +78,37 @@ if __name__ == "__main__":
     # The agent can communicate with this MCP server through stdio, without
     # needing an HTTP server.
     mcp.run(transport="stdio")
+
+
+"""
+Launch Script
+
+Read out:
+To test this MCP tool server with MCP Inspector, I first go to my project folder.
+
+Command:
+cd /Users/tahseenfiroz/Documents/FanFest/youtube-content-agents
+
+Read out:
+Then I activate the Python virtual environment.
+
+Command:
+source .venv/bin/activate
+
+Read out:
+Because my Python package is inside the src folder, I set PYTHONPATH to src.
+
+Command:
+export PYTHONPATH=src
+
+Read out:
+Finally, I launch MCP Inspector and point it to this MCP server module.
+
+Command:
+npx @modelcontextprotocol/inspector python -m youtube_content_agents.mcp_tool_server
+
+Read out:
+After this, MCP Inspector will show a local browser URL. I open that URL, go to
+the Tools tab, and test tools like add_numbers, multiply_numbers, and
+calculate_profit.
+"""
