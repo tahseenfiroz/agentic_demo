@@ -17,6 +17,11 @@ from mcp.server.fastmcp import FastMCP
 # First, I import FastMCP. This is the simple MCP server class that lets me
 # expose Python functions as MCP tools.
 
+# mcp is the MCP Python SDK.
+# server contains components for creating MCP servers.
+# fastmcp is a simplified framework for building MCP servers.
+# FastMCP is the main class used to create an MCP server with minimal code.
+
 mcp = FastMCP("youtube-content-tools", log_level="ERROR")
 
 # Read out:
